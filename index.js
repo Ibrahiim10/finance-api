@@ -46,6 +46,11 @@ app.use('/transactions', transactionRoutes);
 app.use('/upload', uploadRoutes);
 app.use('/admin', adminRoutes);
 
+app.get('/', (req, res) => {
+    res.json(users)
+})
+
+
 // Error handling
 app.use(notfound)
 app.use(errorHandler)
