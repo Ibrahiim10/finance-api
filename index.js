@@ -47,8 +47,8 @@ app.use('/upload', uploadRoutes);
 app.use('/admin', adminRoutes);
 
 app.get('/', (req, res) => {
-    res.json(users)
-})
+    res.json({ message: 'API is running 🚀' });
+});
 
 
 // Error handling
