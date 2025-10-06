@@ -2,6 +2,7 @@ import express from 'express';
 import authRoutes from './routes/auth.js';
 import transactionRoutes from './routes/transaction.js';
 import uploadRoutes from './routes/upload.js';
+import adminRoutes from './routes/admin.js';
 
 
 import dotenv from 'dotenv';
@@ -43,6 +44,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 app.use('/auth', authRoutes);
 app.use('/transactions', transactionRoutes);
 app.use('/upload', uploadRoutes);
+app.use('/admin', adminRoutes);
 
 // Error handling
 app.use(notfound)

@@ -13,12 +13,12 @@ const options = {
             description: 'API documentation for our finance tracker backend'
         },
         servers: [
+
+
             {
-
-                url: 'http://localhost:3000'
-
-                // url: process.env.NODE_ENV == "development" ? 'http://localhost:5000' : 'https://mentorship-api-quul.onrender.com'
+                url: process.env.NODE_ENV == "development" ? 'http://localhost:5000' : 'https://finance-api-5xhs.onrender.com'
             }
+
         ],
         components: {
             securitySchemes: {
